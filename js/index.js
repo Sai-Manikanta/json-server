@@ -13,7 +13,8 @@ async function fetchBlogs() {
         template += `
             <div class="blog">
                <h2>${blog.title}</h2>
-               <p>${blog.body}</p>
+               <p>${blog.body.slice(0, 100)}</p>
+               <a class="link" href="/deatails.html?id=${blog.id}">Read More...</a>
             </div>
         `;
     })
