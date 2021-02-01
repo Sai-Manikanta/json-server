@@ -1,0 +1,27 @@
+h1 {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+form {
+  padding: 30px;
+  max-width: 600px;
+  margin: 0px auto;
+}
+input,
+textarea {
+  padding: 10px 8px;
+  border: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+button {
+  border: none;
+  padding: 8px 20px;
+  background-color: #273239;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}

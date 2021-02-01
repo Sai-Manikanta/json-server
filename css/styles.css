@@ -1,17 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: #fafafa;
-  font-family: "Oxygen", sans-serif;
-  color: #273239;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 .blogs-container {
   padding: 80px 15px 20px;
 }
