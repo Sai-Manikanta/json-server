@@ -4,7 +4,19 @@ const apiEndPoint = "http://localhost:3000";
 
 async function fetchBlogs() {
     const res = await fetch('http://localhost:3000/blogs');
-    const data = await res.json();
+    const blogs = await res.json();
     
-    console.log(data);
+    const blogsDiv = document.getElementById('blogs');
+    let template = '';
+
+    blogs.forEach(blog => {
+        template += `
+            <div class="blog">
+               <h1>${blog.title}</h1>
+               <p>${blog.body}</p>
+            </div>
+        `;
+    })
+
+    blogsDiv.innerHTML = template;
 }
