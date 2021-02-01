@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => fetchBlogs());
+window.addEventListener('DOMContentLoaded', fetchBlogs);
 
 const apiEndPoint = "http://localhost:3000";
 
@@ -14,7 +14,7 @@ async function fetchBlogs() {
             <div class="blog">
                <h2>${blog.title}</h2>
                <p>${blog.body.slice(0, 100)}</p>
-               <a class="link" href="/deatails.html?id=${blog.id}">Read More...</a>
+               <a class="link" href="/details.html?id=${blog.id}">Read More...</a>
             </div>
         `;
     })
