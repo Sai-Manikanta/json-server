@@ -12,7 +12,7 @@ async function fetchBlogs() {
     blogs.forEach(blog => {
         template += `
             <div class="blog">
-               <h1>${blog.title}</h1>
+               <h2>${blog.title}</h2>
                <p>${blog.body}</p>
             </div>
         `;
